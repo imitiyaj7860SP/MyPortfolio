@@ -1,4 +1,6 @@
 import { FaAward } from "react-icons/fa";
+import python from "../assets/Python.png";
+import privacy from "../assets/NPTEL.png";
 
 function Certifications() {
 
@@ -6,12 +8,14 @@ function Certifications() {
     {
       title: "Privacy and Security in Online Social Media",
       provider: "NPTEL",
-      date: "April 2025"
+      date: "April 2025",
+      image: privacy
     },
     {
       title: "Python for Beginners",
       provider: "Infosys Springboard",
-      date: "August 2024"
+      date: "August 2024",
+      image: python
     }
   ];
 
@@ -28,11 +32,21 @@ function Certifications() {
 
           <div
             key={index}
-            className="bg-black text-white p-8 rounded-xl shadow-lg
+            className="bg-black text-white p-6 rounded-xl shadow-lg
                        hover:shadow-2xl hover:-translate-y-2
                        transition duration-300"
           >
 
+            {/* Certification Image */}
+            <a href={cert.image} target="_blank" rel="noopener noreferrer">
+              <img
+                src={cert.image}
+                alt={cert.title}
+                className="rounded-lg mb-4 w-full h-56 object-contain bg-white hover:scale-105 transition"
+              />
+            </a>
+
+            {/* Certification Info */}
             <div className="flex gap-4 items-start">
 
               <FaAward className="text-yellow-400 text-2xl mt-1" />

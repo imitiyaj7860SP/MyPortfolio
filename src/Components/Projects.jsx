@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import calculator from "../assets/Calcy.png";
 
 function Projects() {
 
@@ -31,11 +32,15 @@ function Projects() {
       tech: ["React", "Node.js", "Express", "MongoDB", "AI API"],
       github: "https://github.com/imitiyaj7860SP/AI-Email-Composer-FullStack"
     },
+
     {
-      title: "MyTunes Website",
-      description: "A responsive music streaming landing page inspired by modern media platforms. The project demonstrates front-end development skills including responsive layouts, media sections, and modern UI design.",
-      tech: ['HTML', 'CSS', "JavaScript"],
-      github: "https://github.com/imitiyaj7860SP/MyTunes-Website"
+      title: "Advanced Scientific Calculator",
+      description:
+        "A neon themed advanced calculator with scientific functions including trigonometry, factorial, logarithms, power operations, degree/radian toggle, memory operations, and calculation history.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/imitiyaj7860SP/Advanced-Scientific-Calculator",
+      demo: "https://imitiyaj7860sp.github.io/Advanced-Scientific-Calculator/",
+      image: calculator
     }
 
   ];
@@ -54,39 +59,52 @@ function Projects() {
 
           <div
             key={index}
-            className="bg-black rounded-lg p-6 transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300"
+            className="bg-black rounded-lg overflow-hidden transition-transform transform hover:-translate-y-3 hover:shadow-2xl duration-300"
           >
 
-            <h4 className="font-bold text-lg mb-3 text-white">
-              {project.title}
-            </h4>
+            {/* Image Card */}
+            {project.image && (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
+            )}
 
-            <p className="text-gray-300 text-sm mb-4">
-              {project.description}
-            </p>
+            <div className="p-6">
 
-            <div className="flex flex-wrap gap-2 mb-4">
+              <h4 className="font-bold text-lg mb-3 text-white">
+                {project.title}
+              </h4>
 
-              {project.tech.map((tech, i) => (
-                <span
-                  key={i}
-                  className="text-xs bg-white text-black px-2 py-1 rounded"
-                >
-                  {tech}
-                </span>
-              ))}
+              <p className="text-gray-300 text-sm mb-4">
+                {project.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs bg-white text-black px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+
+              </div>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition w-fit"
+              >
+                <FaGithub />
+                View Code
+              </a>
 
             </div>
-
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition w-fit"
-            >
-              <FaGithub />
-              View Code
-            </a>
 
           </div>
 
