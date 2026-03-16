@@ -30,6 +30,12 @@ function Projects() {
       description: "Full-stack MERN application that generates professional emails from user prompts using AI APIs.",
       tech: ["React", "Node.js", "Express", "MongoDB", "AI API"],
       github: "https://github.com/imitiyaj7860SP/AI-Email-Composer-FullStack"
+    },
+    {
+      title: "MyTunes Website",
+      description: "A responsive music streaming landing page inspired by modern media platforms. The project demonstrates front-end development skills including responsive layouts, media sections, and modern UI design.",
+      tech: ['HTML', 'CSS', "JavaScript"],
+      github: "https://github.com/imitiyaj7860SP/MyTunes-Website"
     }
 
   ];
