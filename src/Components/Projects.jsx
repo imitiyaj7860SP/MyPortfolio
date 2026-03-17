@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import calculator from "../assets/Calcy.png";
+import calculator from "../../public/assets/Calcy.png";
 
 function Projects() {
 

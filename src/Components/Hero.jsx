@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import profileImage from "../assets/profile.jpeg";
+import profileImage from "../../public/assets/profile.jpeg";
 
 function Hero() {
   return (

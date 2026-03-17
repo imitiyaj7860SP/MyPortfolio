@@ -1,8 +1,8 @@
 import { FaCertificate } from "react-icons/fa";
-import bits from "../assets/bits-and-bytes.png";
-import hardware from "../assets/introduction-to-hardware.png";
-import oop from "../assets/object-oriented-certificate.png";
-import programming from "../assets/Cprogramming.png";
+import bits from "../../public/assets/bits-and-bytes.png";
+import hardware from "../../public/assets/introduction-to-hardware.png";
+import oop from "../../public/assets/object-oriented-certificate.png";
+import programming from "../../public/assets/CProgramming.png";
 
 function Certificates() {
   const certificates = [
