@@ -98,7 +98,8 @@ function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm border border-white px-3 py-1 rounded hover:bg-white hover:text-black transition w-fit"
+                className="flex items-center gap-2 text-sm border border-white px-3 py-1 rounded 
+           text-white hover:bg-white hover:text-black transition duration-300 w-fit"
               >
                 <FaGithub />
                 View Code
