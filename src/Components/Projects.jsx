@@ -1,7 +1,19 @@
 import { FaGithub } from "react-icons/fa";
-import calculator from "../../public/assets/Calcy.png";
+import { useState } from "react";
 
 function Projects() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setIsModalOpen(false);
+  };
 
   const projects = [
 
@@ -16,21 +28,24 @@ function Projects() {
       title: "Page Replacement Algorithm Simulator",
       description: "Interactive visualization tool that demonstrates FIFO, LRU, and Optimal page replacement algorithms.",
       tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/imitiyaj7860SP/Efficient-Page-Replacement-Algorithm-Simulator-"
+      github: "https://github.com/imitiyaj7860SP/Efficient-Page-Replacement-Algorithm-Simulator-",
+      image: "/assets/pageReplacement.png"
     },
 
     {
       title: "AI Language Translator",
       description: "AI-powered web tool for translating text between multiple languages using API integration.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "API"],
-      github: "https://github.com/imitiyaj7860SP/AI-Translator"
+      github: "https://github.com/imitiyaj7860SP/AI-Translator",
+      image: "/assets/language.png"
     },
 
     {
       title: "AI Email Composer",
       description: "Full-stack MERN application that generates professional emails from user prompts using AI APIs.",
       tech: ["React", "Node.js", "Express", "MongoDB", "AI API"],
-      github: "https://github.com/imitiyaj7860SP/AI-Email-Composer-FullStack"
+      github: "https://github.com/imitiyaj7860SP/AI-Email-Composer-FullStack",
+      image: "/assets/mail.png"
     },
 
     {
@@ -40,7 +55,7 @@ function Projects() {
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/imitiyaj7860SP/Advanced-Scientific-Calculator",
       demo: "https://imitiyaj7860sp.github.io/Advanced-Scientific-Calculator/",
-      image: calculator
+      image: "/assets/Calcy.png"
     }
 
   ];
@@ -67,7 +82,8 @@ function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                onClick={() => openModal(project.image)}
               />
             )}
 
@@ -112,6 +128,29 @@ function Projects() {
         ))}
 
       </div>
+
+      {/* Image Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-4xl max-h-screen p-4">
+            <img
+              src={selectedImage}
+              alt="Project Preview"
+              className="max-w-full max-h-full object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-white bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-all"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
 
     </section>
   )

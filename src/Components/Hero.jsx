@@ -1,5 +1,4 @@
 import { ReactTyped } from "react-typed";
-import profileImage from "../../public/assets/profile.jpeg";
 
 function Hero() {
   return (
@@ -11,7 +10,7 @@ function Hero() {
       {/* Profile Image */}
       <div className="flex justify-center">
         <img
-          src={profileImage}
+          src="/assets/profile.jpeg"
           alt="Mohammad Imitiyaj Ali"
           className="
           w-48 h-48 md:w-64 md:h-64

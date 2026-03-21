@@ -1,30 +1,26 @@
 import { FaCertificate } from "react-icons/fa";
-import bits from "../../public/assets/bits-and-bytes.png";
-import hardware from "../../public/assets/introduction-to-hardware.png";
-import oop from "../../public/assets/object-oriented-certificate.png";
-import programming from "../../public/assets/CProgramming.png";
 
 function Certificates() {
   const certificates = [
     {
       title: "Computer Programming",
       provider: "Neo Colab • May 2024",
-      image: programming
+      image: "/assets/CProgramming.png"
     },
     {
       title: "Introduction to Hardware and Operating Systems",
       provider: "Coursera • September 2024",
-      image: hardware
+      image: "/assets/introduction-to-hardware.png"
     },
     {
       title: "The Bits and Bytes of Computer Networking",
       provider: "Coursera • September 2024",
-      image: bits
+      image: "/assets/bits-and-bytes.png"
     },
     {
       title: "Object Oriented Programming",
       provider: "Neo Colab • December 2024",
-      image: oop
+      image: "/assets/object-oriented-certificate.png"
     },
   ];
 

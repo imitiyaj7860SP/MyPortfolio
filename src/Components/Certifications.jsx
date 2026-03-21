@@ -1,6 +1,4 @@
 import { FaAward } from "react-icons/fa";
-import python from "../../public/assets/Python.png";
-import privacy from "../../public/assets/NPTEL.png";
 
 function Certifications() {
 
@@ -9,13 +7,13 @@ function Certifications() {
       title: "Privacy and Security in Online Social Media",
       provider: "NPTEL",
       date: "April 2025",
-      image: privacy
+      image: "/assets/NPTEL.png"
     },
     {
       title: "Python for Beginners",
       provider: "Infosys Springboard",
       date: "August 2024",
-      image: python
+      image: "/assets/Python.png"
     }
   ];
 
