@@ -11,11 +11,11 @@ function Achievements() {
         <ul className="list-disc text-lg text-gray-700 space-y-4">
 
           <li>
-            Founder of <span className="font-semibold">Echelon Tech Club</span>
+            Founder of <span className="font-semibold">Echelon Student Organization</span>
           </li>
 
           <li>
-            Successfully organized university-level esports event
+            Successfully organized university-level esports event named Echelon Esports Championship.
           </li>
 
           <li>
