@@ -47,9 +47,10 @@ function About() {
             </h3>
 
             <p className="text-gray-300 leading-relaxed">
-              I enjoy building responsive and user-friendly web applications
-              using modern technologies. My focus is on writing clean code
-              and creating meaningful digital experiences.
+              I am a passionate Computer Science student with a strong interest in
+              full-stack development and modern web technologies. I focus on building
+              scalable, user-friendly applications while continuously improving my
+              problem-solving skills and exploring innovative solutions.
             </p>
 
           </div>
@@ -61,11 +62,35 @@ function About() {
               Academic Background
             </h3>
 
-            <p className="text-gray-300 leading-relaxed">
-              I am currently pursuing my Bachelor's degree in Computer
-              Science. My goal is to grow as a full-stack developer and
-              contribute to impactful software solutions.
-            </p>
+            <div className="space-y-4 text-gray-300 text-sm">
+
+              <div>
+                <p className="font-semibold text-white">
+                  Bachelor of Technology - Computer Science & Engineering
+                </p>
+                <p>Lovely Professional University</p>
+                <p className="text-gray-400">2023 - Present</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-white">
+                  Intermediate
+                </p>
+                <p>Subhash Academy, Kannauj, UP</p>
+                <p>Percentage: 72%</p>
+                <p className="text-gray-400">April 2022 - March 2023</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-white">
+                  Matriculation
+                </p>
+                <p>Subhash Academy, Kannauj, UP</p>
+                <p>Percentage: 69%</p>
+                <p className="text-gray-400">April 2020 - March 2021</p>
+              </div>
+
+            </div>
 
           </div>
 
@@ -73,7 +98,7 @@ function About() {
           <div className="bg-black text-white p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition">
 
             <h3 className="text-xl font-semibold mb-4">
-              Unique Qualities 
+              Unique Qualities
             </h3>
 
             <ul className="space-y-2 text-gray-300 list-disc list-inside">

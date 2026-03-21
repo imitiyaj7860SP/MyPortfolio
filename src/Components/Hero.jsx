@@ -37,7 +37,7 @@ function Hero() {
 
           <ReactTyped
             strings={[
-              "Full Stack Developer",
+              "Aspiring Full Stack Developer",
               "Founder of Echelon Student Organization",
             ]}
             typeSpeed={60}
