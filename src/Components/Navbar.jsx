@@ -46,6 +46,13 @@ function Navbar() {
           </Link>
         </li>
 
+         <li>
+          <Link to="projects" smooth duration={500} offset={-80} spy activeClass="text-blue-400"
+            className="cursor-pointer hover:text-blue-400 transition">
+            Training
+          </Link>
+        </li>
+
         <li>
           <Link to="certificates" smooth duration={500} offset={-80} spy activeClass="text-blue-400"
             className="cursor-pointer hover:text-blue-400 transition">
