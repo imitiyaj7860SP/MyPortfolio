@@ -9,6 +9,7 @@ import Skills from "./Components/Skills"
 import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
 import Certifications from "./Components/Certifications"
+import Training from "./Components/Training"
 import './index.css'
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Training />
       <Certificates />
       <Certifications />
       <Achievements />

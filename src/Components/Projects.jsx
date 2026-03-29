@@ -21,23 +21,8 @@ function Projects() {
       title: "Real Estate Website",
       description: "Full-stack property listing platform with authentication and database-driven property management.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      github: "https://github.com/imitiyaj7860SP/RealEstate-website"
-    },
-
-    {
-      title: "Page Replacement Algorithm Simulator",
-      description: "Interactive visualization tool that demonstrates FIFO, LRU, and Optimal page replacement algorithms.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/imitiyaj7860SP/Efficient-Page-Replacement-Algorithm-Simulator-",
-      image: "/assets/pageReplacement.png"
-    },
-
-    {
-      title: "AI Language Translator",
-      description: "AI-powered web tool for translating text between multiple languages using API integration.",
-      tech: ["HTML", "CSS", "JavaScript", "PHP", "API"],
-      github: "https://github.com/imitiyaj7860SP/AI-Translator",
-      image: "/assets/language.png"
+      github: "https://github.com/imitiyaj7860SP/RealEstate-website",
+      image: "/assets/eState.jpeg"
     },
 
     {
