@@ -67,7 +67,7 @@ function Hero() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="/assets/resume.pdf"
             className="
             bg-black text-white
             px-6 py-3

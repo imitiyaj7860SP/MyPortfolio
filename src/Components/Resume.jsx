@@ -11,7 +11,7 @@ function Resume() {
         </p>
 
         <a
-          href="/resume.pdf" // <--- public folder path
+          href="/assets/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           download
