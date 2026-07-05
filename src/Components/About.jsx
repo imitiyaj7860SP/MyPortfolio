@@ -77,7 +77,7 @@ function About() {
                   Intermediate
                 </p>
                 <p>Subhash Academy, Kannauj, UP</p>
-                <p>Percentage: 72%</p>
+                <p>Percentage: 70%</p>
                 <p className="text-gray-400">April 2022 - March 2023</p>
               </div>
 
@@ -86,7 +86,7 @@ function About() {
                   Matriculation
                 </p>
                 <p>Subhash Academy, Kannauj, UP</p>
-                <p>Percentage: 69%</p>
+                <p>Percentage: 72%</p>
                 <p className="text-gray-400">April 2020 - March 2021</p>
               </div>
 
