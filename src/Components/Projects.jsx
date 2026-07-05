@@ -41,6 +41,14 @@ function Projects() {
       github: "https://github.com/imitiyaj7860SP/Advanced-Scientific-Calculator",
       demo: "https://imitiyaj7860sp.github.io/Advanced-Scientific-Calculator/",
       image: "/assets/Calcy.png"
+    },
+
+    {
+      title: "PlayNexus",
+      description: "Premium Laravel-based gaming platform with futuristic dark theme, glassmorphism UI, neon effects, and interactive browser games including Tic Tac Toe, Quiz Challenge, Snake Arena, and Word Scramble.",
+      tech: ["Laravel", "Bootstrap", "PHP", "MySQL", "JavaScript", "Vite"],
+      github: "https://github.com/imitiyaj7860SP/PlayNexus",
+      image: "/assets/PlayNexus.png"
     }
 
   ];
