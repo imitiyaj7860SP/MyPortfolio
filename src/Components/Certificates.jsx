@@ -25,7 +25,7 @@ function Certificates() {
     {
       title: "Backend Development and API Creation",
       provider: "Packt via Coursera • Apr 2026",
-      image: "/assets/Backend.png"
+      image: "/assets/BackEnd.png"
     },
   ];
 
