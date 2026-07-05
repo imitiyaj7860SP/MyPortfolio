@@ -3,24 +3,29 @@ import { FaCertificate } from "react-icons/fa";
 function Certificates() {
   const certificates = [
     {
-      title: "Computer Programming",
-      provider: "Neo Colab • May 2024",
-      image: "/assets/CProgramming.png"
+      title: "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
+      provider: "Packt via Coursera • Certificate May 2026",
+      image: "/assets/Mern.png"
     },
     {
-      title: "Introduction to Hardware and Operating Systems",
-      provider: "Coursera • September 2024",
-      image: "/assets/introduction-to-hardware.png"
+      title: "Advanced Frontend Development and Deployment",
+      provider: "Packt via Coursera • Certificate May 2026",
+      image: "/assets/AdvancedFrontend.png"
     },
     {
-      title: "The Bits and Bytes of Computer Networking",
-      provider: "Coursera • September 2024",
-      image: "/assets/bits-and-bytes.png"
+      title: "Frontend Development with React",
+      provider: "Packt via Coursera • Certificate May 2026",
+      image: "/assets/FrontEnd.png"
     },
     {
-      title: "Object Oriented Programming",
-      provider: "Neo Colab • December 2024",
-      image: "/assets/object-oriented-certificate.png"
+      title: "Introduction to Front-End Development",
+      provider: "Meta • Coursera • Certificate May 2026",
+      image: "/assets/Introduction.png"
+    },
+    {
+      title: "Backend Development and API Creation",
+      provider: "Packt via Coursera • Certificate Apr 2026",
+      image: "/assets/Backend.png"
     },
   ];
 
@@ -43,15 +48,6 @@ function Certificates() {
                          hover:shadow-2xl hover:-translate-y-2 
                          transition duration-300"
             >
-
-              {/* Certificate Image */}
-              <a href={cert.image} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="rounded-lg mb-4 w-full h-74 object-cover hover:scale-105 transition"
-                />
-              </a>
 
               {/* Certificate Info */}
               <div className="flex items-start gap-4">
