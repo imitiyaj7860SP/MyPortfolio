@@ -4,27 +4,27 @@ function Certificates() {
   const certificates = [
     {
       title: "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
-      provider: "Packt via Coursera • Certificate May 2026",
+      provider: "Packt via Coursera • May 2026",
       image: "/assets/Mern.png"
     },
     {
       title: "Advanced Frontend Development and Deployment",
-      provider: "Packt via Coursera • Certificate May 2026",
+      provider: "Packt via Coursera • May 2026",
       image: "/assets/AdvancedFrontend.png"
     },
     {
       title: "Frontend Development with React",
-      provider: "Packt via Coursera • Certificate May 2026",
+      provider: "Packt via Coursera • May 2026",
       image: "/assets/FrontEnd.png"
     },
     {
       title: "Introduction to Front-End Development",
-      provider: "Meta • Coursera • Certificate May 2026",
+      provider: "Meta • Coursera • May 2026",
       image: "/assets/Introduction.png"
     },
     {
       title: "Backend Development and API Creation",
-      provider: "Packt via Coursera • Certificate Apr 2026",
+      provider: "Packt via Coursera • Apr 2026",
       image: "/assets/Backend.png"
     },
   ];
@@ -48,6 +48,14 @@ function Certificates() {
                          hover:shadow-2xl hover:-translate-y-2 
                          transition duration-300"
             >
+
+              {cert.image && (
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-48 object-contain rounded-lg mb-4 bg-white p-3"
+                />
+              )}
 
               {/* Certificate Info */}
               <div className="flex items-start gap-4">
